@@ -7,7 +7,16 @@ Download: [Latest release build (StyxSpace)](http://saxxyspin.com/dcp/dl.php?id=
 Bukkit forums thread: [not ready yet]()
 
 NOTE: Developer builds can be found from target/!
-NOTE: This version will be/is for MultiVerse2 (usage).
+
+NOTE THE SECOND: This version will be/is for MultiVerse2 (usage).
+=======
+
+Authors
+-----------
+**iffa** - original creator (empty chunk generator, helmets, suits, etc)
+**Canis85** - planet generation, /space back etc
+kitskub - small fixes
+BR - ceiling checking code
 
 License
 -----------
