@@ -1,7 +1,7 @@
 // Package Declaration
 package me.iffa.bananaspace.api;
 
-// BananaSpace Imports
+// StyxSpace Imports
 import me.iffa.bananaspace.config.SpaceConfig;
 
 // Bukkit Imports
@@ -13,6 +13,17 @@ import org.bukkit.World;
  * @author iffa
  */
 public class SpaceConfigHandler {
+    /**
+     * Gets the world name of a world (why is this even here?)
+     * 
+     * @param world World
+     * 
+     * @return world name
+     */
+    public static String getWorldName(World world) {
+        return world.getName();
+    }
+
     /**
      * Gets the required helmet-state of a world.
      * 
@@ -146,14 +157,5 @@ public class SpaceConfigHandler {
      */
     public static int getAsteroidChance(World world) {
         return SpaceConfig.myConfig.getInt("worlds." + world.getName() + ".generation.asteroidchance", 1);
-    }
-    
-    /**
-     * Checks if Spout will be used.
-     * 
-     * @return true if Spout is used
-     */
-    public static boolean isUsingSpout() {
-        return SpaceConfig.myConfig.getBoolean("global.usespout", true);
     }
 }
